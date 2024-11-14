@@ -1,0 +1,318 @@
+* {
+  user-select: none;
+  background-color: #f8f7f4;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+.page1 {
+  height: 100%;
+  width: 100%;
+  /* background-color: royalblue; */
+}
+
+.nav {
+  height: 110px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* background-color: navajowhite; */
+  padding: 0.7vw 2vw;
+}
+
+.nav1 {
+  display: flex;
+  width: 30%;
+  /* background-color: yellow; */
+  align-items: center;
+  justify-content: space-evenly;
+}
+.nav img {
+  height: 55px;
+  margin-bottom: 25px;
+}
+
+.nav1 h4 {
+  font-size: 13.5px;
+  font-weight: 500;
+  font-family: poppins;
+}
+
+.nav2 {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 30%;
+  /* background-color: yellow; */
+  margin: 0 20px;
+}
+
+.nav2 button {
+  font-family: poppins;
+  /* border: none; */
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 50px;
+}
+
+.nav .but1 {
+  border: none;
+}
+
+.nav .but2 {
+  color: white;
+  background-color: #0d0c22;
+  border: none;
+}
+
+.nav .but2:hover {
+  background-color: #565564;
+  transition: all ease-in 0.5s;
+}
+
+.nav .search {
+  padding: 10px 20px;
+  border: 1px solid rgb(75, 75, 75);
+  border-radius: 50px;
+  background-color: white;
+  font-size: 15px;
+}
+
+.content {
+  height: calc(100% - 110px);
+  padding-top: 5vw;
+  width: 100%;
+}
+
+.content h4 {
+  background-color: #f2b0ea;
+  padding: 10px 13px;
+  width: fit-content;
+  border-radius: 50px;
+  /* font-family: poppins; */
+  font-weight: 600;
+  margin-bottom: 20px;
+  font-size: 17px;
+  position: relative; /* We can also acces the proprties of position:absolute by gicing position:relative i.e left, right, top and bottom */
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.content h1 {
+  text-align: center;
+  font-size: 75px;
+  line-height: 1;
+  font-family: "Source Serif 4";
+  font-weight: 400;
+  margin: 25px 0;
+}
+
+.content h3 {
+  font-family: poppins;
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.content button {
+  margin-top: 34px;
+  font-family: poppins;
+  border: none;
+  padding: 20px 30px;
+  position: relative; /* We can also acces the proprties of position:absolute by gicing position:relative i.e left, right, top and bottom */
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 50px;
+  color: white;
+  background-color: #0d0c22;
+  text-align: center;
+}
+
+.bottom {
+  height: 40vh;
+  margin-top: 4vh;
+  white-space: nowrap;
+  padding: 1.1vw 0;
+  /* background-color: red; */
+  width: 100%;
+  gap: 30px;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.bottom::-webkit-scrollbar {
+  display: none;
+}
+
+.elem {
+  border: 1px solid black;
+  animation-name: move;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  display: inline-block;
+  margin-right: 20px;
+  height: 100%;
+  width: 15%;
+  position: relative;
+  overflow: hidden;
+  border-radius: 30px;
+}
+
+@keyframes move {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.elem:nth-child(1) {
+  margin-left: 20px;
+}
+
+.elem img {
+  height: 100%;
+  width: 100%;
+  object-position: center;
+  object-fit: cover;
+}
+
+.elem video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.elem .txt-bottom {
+  position: absolute;
+  background-color: transparent;
+  color: white;
+  height: 25%;
+  padding: 1vw;
+  font-family: poppins;
+  bottom: 10%;
+  width: 100%;
+}
+
+.elem .txt-bottom h3 {
+  font-weight: 600;
+  background-color: transparent;
+  font-size: 13px;
+  text-align: left;
+}
+
+.elem .txt-bottom h5 {
+  font-size: 13px;
+  font-weight: 600;
+  background-color: transparent;
+  margin-top: 5px;
+  text-align: left;
+}
+
+.elem .txt-bottom .abil {
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.elem .txt-bottom .abil h6 {
+  font-weight: 600;
+  border: 1px solid white;
+  margin-top: 10px;
+  border-radius: 50px;
+  padding: 5px 10px;
+  font-size: 13px;
+  background-color: transparent;
+  text-align: left;
+  font-weight: 500;
+}
+
+.page2 {
+  height: 100%;
+  width: 100%;
+  padding: 3vw;
+}
+
+.page2 .inspire {
+  text-align: center;
+  font-family: poppins;
+  font-size: 2.5vw;
+  padding-top: 1vw;
+  margin-bottom: 3vw;
+  font-weight: 400;
+}
+
+.box {
+  height: 15vw;
+  border-radius: 15px;
+  display: inline-block;
+  margin: 10px;
+  width: 22vw;
+  transition: all ease 0.4s;
+  position: relative;
+  overflow: hidden;
+}
+
+.box img {
+  transition: all ease 0.4s;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.box-bottom {
+  height: 40%;
+  position: absolute;
+  width: 100%;
+  color: white;
+  background-color: transparent;
+  display: flex;
+  padding: 0 1vw;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(transparent, rgba(0, 0, 1, 0.534));
+  bottom: -40%;
+  transition: all ease 0.4s;
+}
+
+.box-bottom h5,i {
+  font-family: poppins;
+  font-weight: 500;
+  background-color: transparent;
+  font-size: 15px;
+}
+.box-bottom i {
+  font-family: poppins;
+  font-size: 18px;
+  color: black;
+  background-color: white;
+  padding: 8px 9px;
+  border-radius: 50%;
+}
+
+.box:hover .box-bottom {
+  bottom: 0;
+}
+
+.box:hover img {
+  scale: 1.1;
+}
+
+.box:hover {
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.276);
+}
