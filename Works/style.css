@@ -1,0 +1,201 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Freight big pro";
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+.main {
+    background-color: black;
+}
+
+.loader {
+    background-color: black;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 99;
+    /* display: none; */
+}
+
+.loader h1 {
+    font-size: 6.9vw;
+    font-weight: 100;
+    position: relative;
+    z-index: 9;
+    line-height: 5.5vw;
+    letter-spacing: -3px;
+}
+
+.loader video {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 6;
+    object-fit: cover;
+}
+
+.yellow1 {
+    width: 100%;
+    height: 100%;
+    background-color: #F5E431;
+    position: absolute;
+    z-index: 8;
+}
+
+.yellow2 {
+    width: 100%;
+    height: 100%;
+    background-color: #F5E431;
+    position: absolute;
+    z-index: 7;
+}
+
+.nav {
+    position: absolute;
+    width: 100%;
+    padding: 30px 50px;
+    /* background-color: red; */
+    z-index: 10;
+}
+
+.nav svg path {
+    fill: black;
+}
+
+.pg1 {
+    height: 100vh;
+    width: 100%;
+    background-color: #F5E431;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.pg1 h1 {
+    font-size: 6.9vw;
+    font-weight: 100;
+    line-height: 5.5vw;
+    letter-spacing: -3px;
+}
+
+
+.pg2 {
+    height: 100vh;
+    width: 100%;
+    background-color: #000;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.elem {
+    /* background-color: lightblue; */
+    width: 100%;
+    cursor: pointer;
+    position: relative;
+}
+
+.elem .blur {
+    background: linear-gradient(to right, #f5e31bf6, #F5E431, #f5e31bf6);
+    box-shadow: 10px 0px 20px 20px #F5E431, -10px 0px 20px 100px #F5E431;
+    position: absolute;
+    width: 30%;
+    left: 50%;
+    z-index: 8;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: 80%;
+}
+
+.elem h2 {
+    line-height: 5vw;
+    font-size: 7vw;
+    text-transform: uppercase;
+    font-weight: 100;
+    position: relative;
+    z-index: 9;
+}
+
+.elem .moving {
+    background-color: #F5E431;
+    padding: 9px 0;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -45%) scaleY(0);
+    overflow: hidden;
+    width: 100%;
+    white-space: nowrap;
+    transition: all ease 0.2s;
+    /* opacity: 0; */
+}
+
+.elem .moving .moving-in {
+    white-space: nowrap;
+    /* background-color: lightseagreen; */
+    display: inline-block;
+    animation-name: moving;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.elem .moving .moving-in h5 {
+    color: black;
+    display: inline-block;
+    font-weight: 500;
+    transition-delay: 0.2s;
+    opacity: 0;
+    font-size: 17px;
+    font-family: poppins;
+    text-transform: uppercase;
+    margin-right: 35px;
+    font-weight: 400;
+    /* font-size: 19; */
+}
+
+@keyframes moving {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.elem:hover .moving {
+    transform: translate(0, -45%) scaleY(1);
+    opacity: 1;
+}
+
+.elem:hover .moving h5 {
+    opacity: 1;
+}
+
+.elem:hover h2 {
+    /* color: black; */
+    font-style: italic;
+}
+
+.pg3 {
+    height: 100vh;
+    width: 100%;
+    background-color: #fff;
+
+}
