@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CyberPunk</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono:regular" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="main w-full font-['Share_Tech_Mono']">
+      <div class="fixed flex justify-between items-center top-0 left-0 px-10 py-5 w-full">
+        <img
+        class=" w-[177px] mix-blend-screen contrast-150 saturate-150"
+          src="https://i.redd.it/3d-rendered-the-cyberpunk-logo-using-blender-v0-khopj82wqee91.png?width=1920&format=png&auto=webp&s=f42dbd8f5c04aedb9ba9291c1ba4d679029cc1f3"
+          alt=""
+        />
+        <div class="flex gap-5 items-center justify-center">
+          <a href="#games" class="text-[#EEC94D] hover:text-blue-400 hover:text-shadow-[0_0_10px_#00f] transition-all text-sm uppercase tracking-widest font-bold">Games</a>
+          <a href="#store" class="text-[#EEC94D] hover:text-blue-400 hover:text-shadow-[0_0_10px_#00f] transition-all text-sm uppercase tracking-widest font-bold">Store</a>
+          <a href="#community" class="text-[#EEC94D] hover:text-blue-400 hover:text-shadow-[0_0_10px_#00f]  transition-all text-sm uppercase tracking-widest font-bold">Community</a>
+          <a href="#news" class="text-[#EEC94D] hover:text-blue-400 hover:text-shadow-[0_0_10px_#00f]  transition-all text-sm uppercase tracking-widest font-bold">News</a>
+          <a href="#support" class="text-[#EEC94D] hover:text-blue-400 hover:text-shadow-[0_0_10px_#00f]  transition-all text-sm uppercase tracking-widest font-bold">Support</a>
+        </div>
+      </div>
+      <div class="w-full h-full overflow-hidden">
+        <img
+        class="absolute top-1/2 w-1/2 left-1/2 -translate-x-1/2  filter -translate-y-1/2 mix-blend-screen contrast-125 saturate-150"
+          src="https://i.redd.it/3d-rendered-the-cyberpunk-logo-using-blender-v0-khopj82wqee91.png?width=1920&format=png&auto=webp&s=f42dbd8f5c04aedb9ba9291c1ba4d679029cc1f3"
+          alt=""
+        />
+        <div class="w-[39rem] h-[39rem] bg-blue-600 rounded-full absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 blur-[100px] z-[-1] animate-[pulse_4s_ease-in-out_infinite]"></div>
+        <canvas id="canvas"></canvas>
+      </div>
+      <div class="w-full h-screen bg-black"></div>
+    </div>
+    <script type="module" src="main.js"></script>
+  </body>
+</html>
+
